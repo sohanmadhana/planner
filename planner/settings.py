@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-a1y%@-0!1u9odljf@&mp&ae@1(x!wq5a4d1sxar-t62^ukxx3#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['codemancers-planner.herokuapp.com','127.0.0.1','localhost']
 
 
 # Application definition
@@ -86,10 +86,10 @@ DATABASES = {
     # 
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'plannerdb1',
+        'NAME': 'plannerdb',
         'USER': 'postgres',
         'PASSWORD': 'planner2021',
-        'HOST': 'plannerdb1.cpvuapjpbuz2.us-west-1.rds.amazonaws.com',
+        'HOST': 'tasktodoapp.cpvuapjpbuz2.us-west-1.rds.amazonaws.com',
         'PORT': '5432'
     }
         
