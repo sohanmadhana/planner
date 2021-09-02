@@ -86,10 +86,10 @@ DATABASES = {
     # 
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'plannerdb',
-        'USER': 'postgres',
-        'PASSWORD': 'planner2021',
-        'HOST': 'tasktodoapp.cpvuapjpbuz2.us-west-1.rds.amazonaws.com',
+        'NAME': os.environ.get('NAME'),
+        'USER': os.environ.get('USER'),
+        'PASSWORD': os.environ.get('PASSWORD'),
+        'HOST': os.environ.get('HOST'),
         'PORT': '5432'
     }
         
